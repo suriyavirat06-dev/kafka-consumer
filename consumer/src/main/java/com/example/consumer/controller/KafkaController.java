@@ -18,4 +18,8 @@ public class KafkaController {
         String emp = kafkaService.getMessage();
         return ResponseEntity.ok(emp);
     }
+    @GetMapping()
+    public String message(){
+        return "Hello World";
+    }
 }
